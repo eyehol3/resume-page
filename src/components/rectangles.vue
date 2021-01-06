@@ -35,7 +35,5 @@ export default {
 .rectangles {
     width: 60rem;
     margin: 50px auto;
-    // align-items: center;
-    // justify-content: center;
 }
 </style>

@@ -12,6 +12,7 @@
 
 <style lang="scss" scoped>
 div {
+    margin: 10rem auto;
 	display: flex;
 	flex-direction: column;
     text-align: center;
