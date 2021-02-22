@@ -1,17 +1,18 @@
 <script>
-	export let name;
-</script>
+    import Home from "./routes/About.svelte";
 
+	export let name;
+    export let url = "";
+</script>
 <main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+    <Home/>
 </main>
 
-<style lang="scss">
+<style>
 	
 a {
   font-weight: bold;
-  color: $font-cl;
-//   padding: 30px;
+   /* color: $font-cl; */
+   /* padding: 30px; */
 }
 </style>
