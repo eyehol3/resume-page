@@ -1,4 +1,5 @@
 <template>
+    <router-link to="/">
 	<css-doodle class="rectangles">
         @grid: 15x1;
 :doodle{
@@ -20,6 +21,7 @@
         background: #FF9F9F
         }
     </css-doodle>
+    </router-link>
 </template>
 
 
@@ -33,7 +35,7 @@ export default {
 
 <style scoped lang='scss'>
 .rectangles {
-    width: 60rem;
+    max-width: 60rem;
     margin: 50px auto;
 }
 </style>
