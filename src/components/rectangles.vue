@@ -35,7 +35,7 @@ export default {
 
 <style scoped lang='scss'>
 .rectangles {
-    width: 60rem;
+    max-width: 60rem;
     margin: 50px auto;
 }
 </style>

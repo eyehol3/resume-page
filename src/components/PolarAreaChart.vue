@@ -42,7 +42,7 @@ export default {
 		};
 		onMounted(() => {
 			// the DOM element will be assigned to the ref after initial render
-			console.log(chartRef);
+			// console.log(chartRef);
 			let ctx = chartRef.value.getContext("2d");
 			new Chart(ctx, {
 				// 	new Chart(this.$refs.["chart"], {

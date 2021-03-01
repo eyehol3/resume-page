@@ -21,7 +21,7 @@
 
 ? ?
 
-member of Non-profit organization BEST Lviv
+member of Non-profit organization <a href='https://best-lviv.org.ua/'>BEST Lviv</a>
 
 student of Computer Science, Artifitial Intellegnce
 at Lviv Polytechnic National University
