@@ -1,4 +1,5 @@
 <template>
+    <router-link to="/">
 	<css-doodle class="rectangles">
         @grid: 15x1;
 :doodle{
@@ -20,6 +21,7 @@
         background: #FF9F9F
         }
     </css-doodle>
+    </router-link>
 </template>
 
 

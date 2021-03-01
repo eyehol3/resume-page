@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
+import WebDev from '../views/WebDev.vue'
 
 const routes = [
   {
@@ -10,7 +11,7 @@ const routes = [
   {
     path: '/webdev',
     name: 'webdev',
-    component: Home
+    component: WebDev
   },
   {
     path: '/design',

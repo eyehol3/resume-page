@@ -1,6 +1,5 @@
 <template>
 	<div class="home">
-		<rectangles />
 
 		<div class="top">
 			<img src="@/assets/images/me-selfie.png" alt="" />
@@ -18,22 +17,18 @@
 		</div>
         <timeline />
 		<!-- <languages /> -->
-		<Footer />
-	</div>
+    </div>
 </template>
 
 <script>
 // import languages from "@/components/languages.vue";
-import Footer from "@/components/footer.vue";
-import rectangles from "@/components/rectangles.vue";
+
 import timeline from "@/components/timeline.vue";
 
 export default {
 	name: "Home",
 	components: {
 		// languages,
-		Footer,
-        rectangles,
         timeline
 	},
 };
