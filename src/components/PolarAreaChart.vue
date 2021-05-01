@@ -5,7 +5,10 @@
 </template>
 
 <script>
-import Chart from "chart.js";
+// import Chart from "chart.js";
+import { Chart, registerables } from 'chart.js';
+Chart.register(...registerables);
+
 import { ref, onMounted } from "vue";
 
 export default {
@@ -44,10 +47,9 @@ export default {
 			// the DOM element will be assigned to the ref after initial render
 			// console.log(chartRef);
 			let ctx = chartRef.value.getContext("2d");
+            // eslint-disable-next-line
 			new Chart(ctx, {
-				// 	new Chart(this.$refs.["chart"], {
-				// The type of chart we want to create
-				type: "polarArea",
+				type: "bar",
 
 				// The data for our dataset
 				data: chartData,
@@ -55,8 +57,22 @@ export default {
 				// Configuration options go here
 				options: {
 					maintainAspectRatio: false,
-					scale: {
-						display: false,
+					// scale: {
+					// display: false,
+					// },
+					scales: {
+						y: {
+							beginAtZero: true,
+                            ticks: {
+                                count: 3,
+                                    // eslint-disable-next-line
+                                    callback: function(label, index, labels) {
+                                        if (label>70){ return "good"}
+                                        else if (label<30){ return "had experience"}
+                                        else {return "ok"}
+                                    }
+                                    }
+						},
 					},
 					legend: {
 						// display: false,

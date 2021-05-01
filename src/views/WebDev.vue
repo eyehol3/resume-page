@@ -10,8 +10,11 @@
 
 		<ul>
 			<li>
-				currently working on interactive menu for cafés (React.js +
-				django) [no site yet]
+				currently working on 
+                <a href="https://ficha.n-st-r.xyz/">     
+                interactive menu for cafés (React.js +
+				django) 
+                </a>
 			</li>
 			<li>
 				designer of
